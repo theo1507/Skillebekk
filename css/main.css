@@ -3287,6 +3287,7 @@ footer {
     line-height: 2;
     text-align: center;
     color: var(--light-color);
+    background-color: #262423;
 }
 
 footer h4 {
