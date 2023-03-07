@@ -3034,14 +3034,14 @@ footer .row {
 
 .footer-logo {
     display: block;
-    margin: -.6rem 0 3.6rem 0;
+    margin: -1.2rem 0 6.6rem 0;
     padding: 0;
     outline: 0;
     border: none;
-    width: 85px;
-    height: 28px;
+    width: 105px;
+    height: 38px;
     background: url("") no-repeat center;
-    background-size: 85px 28px;
+    background-size: 105px 38px;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
