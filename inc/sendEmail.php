@@ -1,6 +1,6 @@
 ﻿<?php
 
-// Replace this with your own email address
+// Skriv inn mailadressen til personen som skal motta mails her
 $siteOwnersEmail = 'theo.floden@gmail.com';
 
 
@@ -23,11 +23,11 @@ if($_POST) {
     if (strlen($contact_message) < 15) {
         $error['message'] = "Please enter your message. It should have at least 15 characters.";
     }
-    // Subject
+    // Tema på mail
     if ($subject == '') { $subject = "Contact Form Submission"; }
 
 
-    // Set Message
+    // Meldingen
     $message .= "Email from: " . $name . "<br />";
     $message .= "Email address: " . $email . "<br />";
     $message .= "Message: <br />";
