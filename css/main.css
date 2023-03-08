@@ -2591,6 +2591,7 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 12rem;
     color: var(--light-color);
     position: relative;
+    background-size: cover;
 }
 
 .s-contact .overlay {
