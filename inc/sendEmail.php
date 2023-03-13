@@ -1,4 +1,4 @@
-﻿<?php
+﻿<php
 
 // Skriv inn mailadressen til personen som skal motta mails her
 $siteOwnersEmail = 'theo.floden@gmail.com';
@@ -66,4 +66,4 @@ if($_POST) {
 
 }
 
-?>
+>
