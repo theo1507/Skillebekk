@@ -188,42 +188,6 @@
         });
     };
 
-    /* Send Email form
-    *-------------------------------------------------------*/
-    var clSendEmail = function() {
-        let submitEl = document.querySelector(".btn--primary");
-        submitEl.addEventListener("click", sendMail);
-
-        function sendMail() {
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "theo.floden@gmail.com",
-            Password : "Hissig11",
-            To : 'theo.f.dropshipping@gmail.com',
-            From : document.getElementById("contactEmail").value,
-            Subject : "Ny Melding Fra Nettsiden",
-            Body : "Name:" + document.getElementById("contactName").value
-                + "<br> Email: " + document.getElementById("contactEmail").value
-                + "<br> Tema: " + document.getElementById("contactSubject").value
-                + "<br> <br>" + document.getElementById("contactMessage").value
-            }).then(
-                function afterClick() {
-                        let sLoader = document.querySelector(".submit-loader");
-                        let messageWarningEl = document.querySelector(".message-warning");
-                        let messageSuccessEl = document.querySelector(".message-success");
-                        let contactFormEl = document.querySelector("#contactForm");
-                        
-                        sLoader.slideDown("slow");
-                        messageWarningEl.fadeout();
-                        contactFormEl.fadeout();
-                        messageSuccessEl.fadeIn();
-                    }
-                
-            );
-        };
-    };
-
-
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
@@ -237,8 +201,6 @@
         clAlertBoxes();
         clAOS();
         clBackToTop();
-        clSendEmail();
-
     })();
         
         

@@ -28,6 +28,14 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("rLPxDA8psm7phgKFr");
+    })();
+    </script>
 
     <!-- favicons
     ================================================== -->
@@ -298,8 +306,7 @@
 
                 <h3 class="h6">Send oss en Melding</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
-                    <fieldset>
+                <form name="contactForm" id="contactForm" method="POST">
     
                     <div class="form-field">
                         <input name="contactName" type="text" id="contactName" placeholder="navn" value="" minlength="2" required="" aria-required="true" class="full-width">
@@ -314,7 +321,7 @@
                         <textarea name="contactMessage" id="contactMessage" placeholder="Melding" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
+                        <button type="submit" class="full-width btn--primary submit-button">Submit</button>
                         <div class="submit-loader">
                             <div class="text-loader">Sender...</div>
                             <div class="s-loader">
@@ -325,7 +332,6 @@
                         </div>
                     </div>
     
-                    </fieldset>
                 </form>
 
                 <!-- contact-warning -->
@@ -456,7 +462,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/send-mail.js"></script>
 
 </body>
 
