@@ -1270,7 +1270,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-nav {
     background: var(--semi-dark-color);
-    color: rgba(255, 255, 255, 0.25);
+    color: var(--light-color);
     font-family: "montserrat-light", sans-serif;
     font-size: 1.3rem;
     line-height: 1.846;
@@ -1357,7 +1357,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav__social li a {
-    color: var(--semi-dark-color);
+    color: var(--light-color);
 }
 
 .header-nav__social li a:hover,
