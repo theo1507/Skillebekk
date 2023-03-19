@@ -2245,8 +2245,8 @@ html.no-csstransitions .home-content__main {
     margin-top: -23.4rem;
 }
 .works-text .col-full {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 250px;
+    padding-right: 250px;
     text-align: center;
 }
 
@@ -2257,7 +2257,8 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * works
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 800px) {
+
+ @media only screen and (max-width: 1200px) {
     .works-text .col-full {
         padding-left: 100px;
         padding-right: 100px;
