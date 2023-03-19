@@ -2237,11 +2237,17 @@ html.no-csstransitions .home-content__main {
 .s-works .intro-wrap {
     padding: 15rem 0 25.2rem;
     background: #111111;
+    min-height: 800px;
 }
 
 .works-content {
     max-width: 1160px;
     margin-top: -23.4rem;
+}
+.works-text .col-full {
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
 }
 
 
@@ -2252,8 +2258,9 @@ html.no-csstransitions .home-content__main {
  * works
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 800px) {
-    .item-folio__title, .item-folio__cat {
-        font-size: 1.3rem;
+    .works-text .col-full {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
@@ -2267,12 +2274,15 @@ html.no-csstransitions .home-content__main {
     .works-content {
         margin-top: -25.2rem;
     }
-    .masonry__brick {
-        float: none;
-        width: 100%;
+    .works-text .col-full {
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .item-folio__title, .item-folio__cat {
-        font-size: 1.4rem;
+}
+@media only screen and (max-width: 400px) {
+    .works-text .col-full {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
